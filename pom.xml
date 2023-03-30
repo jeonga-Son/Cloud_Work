@@ -75,7 +75,7 @@
 				<configuration>
 					<images>
 						<image>
-							<name>kingja/spring-docker</name>
+							<name>kingja/spring-docker2</name>
 							<build>
 								<dockerFileDir>${basedir}</dockerFileDir>
 							</build>

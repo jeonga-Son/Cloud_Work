@@ -10,13 +10,13 @@ import java.util.List;
 @Service
 public class MemberService {
     @Autowired
-    public MemberMapper memberMapper;
+    MemberMapper memberMapper;
 
-    public List<MemberVO> selectAllMembers() {
+    public List<MemberVO> selectAllMembers(){
         return memberMapper.selectAllMembers();
     }
 
-    public void insertMember(MemberVO vo) {
+    public void insertMember(MemberVO vo){
         memberMapper.insertMember(vo);
     }
 }

@@ -13,20 +13,20 @@ import java.util.List;
 @RestController
 public class HelloController {
     @Autowired
-    private MemberService memberService;
+    MemberService memberService;
 
-    @GetMapping("/")
-    public String hello() {
-        return "Hello Docker3!!!";
+    @GetMapping("/hello")
+    public String hello(){
+        return "Hello Docker444444!!!";
     }
 
     @GetMapping("/members")
-    public List<MemberVO> selectListMembers() {
+    public List<MemberVO> selectListMembers(){
         return memberService.selectAllMembers();
     }
 
     @PostMapping("/addMember")
-    public String addMember(@RequestBody MemberVO vo) {
+    public String addMember(@RequestBody MemberVO vo){
         memberService.insertMember(vo);
         return "Ok";
     }
